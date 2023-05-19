@@ -1,0 +1,96 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    border: 0;
+}
+
+/*Navbar*/
+#navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#navbar::before{
+    content: "";
+    
+    height: 100%;
+    position: absolute  ;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar img{
+    height: 49px;
+    margin: 4px 5px;
+
+}
+#navbar ul{
+    display: flex;
+    margin-left: -34px;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2rem;
+}
+#navbar ul li a{
+    display: block;
+    list-style: none;
+    padding: 3px 18px;
+    text-decoration: none;
+    border-radius: 23px;
+    background-color: rgb(248, 75, 75);
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+/*HOME SECTION*/
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 1px;
+    height: 555px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(bg3.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home p{
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-size: 1.5rem;
+    padding: 9px 72px;
+}
+
+   
+.h-primary{
+    align-items: flex-end;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 2.2rem;
+    padding: 8px 26px;
+}
+
+.btn{
+    padding: 9px 7px;
+    background-color: rgb(239, 45, 45);
+    margin: 11px;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 22px;
+    cursor: pointer;
+
+}
+
